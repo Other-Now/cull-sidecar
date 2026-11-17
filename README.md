@@ -65,7 +65,7 @@ also gate on capture time.
 | Ack **after** COMMIT (shipped) | 6,483 (another run: 4,111) | **0** |
 | Ack **before** COMMIT, flushed every 250 ms (deliberately unsafe control) | 405,939 | **996** (another run: 1,002) |
 
-The control shows the test can actually detect loss. Scope: this covers *process* crashes.
+On the GitHub Actions VM, where fsync is faster, the same test acknowledged **68,207** edits and lost **0**; the unsafe control lost 531 over 5 kills. The control shows the test can actually detect loss. Scope: this covers *process* crashes.
 `synchronous=FULL` is set for power loss, but power loss was not tested.
 
 ### Throughput, memory, SQLite batching
