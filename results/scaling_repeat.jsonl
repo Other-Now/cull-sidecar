@@ -1,0 +1,6 @@
+{"rep":1,"imgs_per_sec":123.04149208861311,"peak_rss_kb":10588,"stats":{"batches":32,"cancelled":false,"failed":0,"found":8000,"imported":8000,"secs":65.018717379,"skipped_unchanged":0},"threads":1}
+{"rep":1,"imgs_per_sec":163.40772155099629,"peak_rss_kb":13252,"stats":{"batches":32,"cancelled":false,"failed":0,"found":8000,"imported":8000,"secs":48.957294821,"skipped_unchanged":0},"threads":2}
+{"rep":2,"imgs_per_sec":84.46857728591219,"peak_rss_kb":10320,"stats":{"batches":32,"cancelled":false,"failed":0,"found":8000,"imported":8000,"secs":94.7097756,"skipped_unchanged":0},"threads":1}
+{"rep":2,"imgs_per_sec":213.63977857924812,"peak_rss_kb":13296,"stats":{"batches":32,"cancelled":false,"failed":0,"found":8000,"imported":8000,"secs":37.446209939,"skipped_unchanged":0},"threads":2}
+{"rep":3,"imgs_per_sec":128.73630657008582,"peak_rss_kb":10516,"stats":{"batches":32,"cancelled":false,"failed":0,"found":8000,"imported":8000,"secs":62.142531607,"skipped_unchanged":0},"threads":1}
+{"rep":3,"imgs_per_sec":219.87984129565586,"peak_rss_kb":13300,"stats":{"batches":32,"cancelled":false,"failed":0,"found":8000,"imported":8000,"secs":36.38350816,"skipped_unchanged":0},"threads":2}

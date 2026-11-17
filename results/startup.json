@@ -1,0 +1,14 @@
+{
+  "0": {
+    "runs": 21,
+    "hello_ms_median": 2.64,
+    "first_page_ms_median": 3.07,
+    "db_mb": 0
+  },
+  "100000": {
+    "runs": 21,
+    "hello_ms_median": 3.01,
+    "first_page_ms_median": 3.91,
+    "db_mb": 14.6
+  }
+}

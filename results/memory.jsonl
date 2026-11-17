@@ -1,0 +1,3 @@
+{"library":1000,"imgs_per_sec":128.57621579640403,"peak_rss_kb":10248,"stats":{"batches":4,"cancelled":false,"failed":0,"found":1000,"imported":1000,"secs":7.777488191,"skipped_unchanged":0},"threads":3}
+{"library":5000,"imgs_per_sec":103.30342572067958,"peak_rss_kb":13580,"stats":{"batches":20,"cancelled":false,"failed":0,"found":5000,"imported":5000,"secs":48.401105434,"skipped_unchanged":0},"threads":3}
+{"library":20000,"imgs_per_sec":163.78966936812844,"peak_rss_kb":18056,"stats":{"batches":79,"cancelled":false,"failed":0,"found":20000,"imported":20000,"secs":122.107823266,"skipped_unchanged":0},"threads":3}

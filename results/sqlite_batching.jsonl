@@ -1,0 +1,6 @@
+{"batch":1,"rows":5000,"rows_per_sec":219.59534438064168,"secs":22.769153026,"sync":"Full"}
+{"batch":16,"rows":5000,"rows_per_sec":1926.2689515060633,"secs":2.5956915289999998,"sync":"Full"}
+{"batch":256,"rows":5000,"rows_per_sec":24070.435756389685,"secs":0.207723701,"sync":"Full"}
+{"batch":1,"rows":5000,"rows_per_sec":4823.712417852382,"secs":1.036546039,"sync":"Normal"}
+{"batch":16,"rows":5000,"rows_per_sec":31524.153743550003,"secs":0.15860854,"sync":"Normal"}
+{"batch":256,"rows":5000,"rows_per_sec":39642.42595219006,"secs":0.126127498,"sync":"Normal"}

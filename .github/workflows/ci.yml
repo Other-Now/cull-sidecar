@@ -1,0 +1,37 @@
+name: ci
+on: [push, pull_request]
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with: { components: "clippy, rustfmt" }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: cargo fmt --check
+      - run: cargo clippy --release --all-targets -- -D warnings
+      - run: cargo test --release
+      - name: supervisor (crash restart, hang detection, graceful stop)
+        run: CULL_BIN=target/release/cull-sidecar node --test tests/supervisor.test.js
+      - name: durability - 10 x kill -9 mid-edit, 0 acknowledged edits may be lost
+        run: node tests/crash.js target/release/cull-sidecar /tmp/crash-safe --kills 10
+      - name: unsafe control (expected to lose edits; reported, not gated)
+        run: node tests/crash.js target/release/cull-sidecar /tmp/crash-unsafe --kills 5 --unsafe > /tmp/unsafe.json; grep -E "totalAcked|totalLost" /tmp/unsafe.json
+      - name: electron smoke (import -> group -> list -> clean shutdown)
+        run: |
+          npm install --no-save electron@33.2.1
+          target/release/cull-sidecar synth-photos --out /tmp/photos --n 40
+          CULL_SMOKE=/tmp/photos CULL_DATA=/tmp/smoke-data CULL_SIDECAR_BIN=target/release/cull-sidecar \
+            xvfb-run -a npx electron --no-sandbox . | tee /tmp/smoke.json
+          grep -q '"imported":40' /tmp/smoke.json
+          grep -q '"how":"graceful"' /tmp/smoke.json
+
+  windows:
+    # stdio + tcp transports and the catalog on Windows; uds is Unix-only.
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test --release

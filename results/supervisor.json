@@ -1,0 +1,7 @@
+{
+  "crashRestartMs": 208.814986,
+  "hangRestartMs": 915.568521,
+  "stopMs": 11.134516,
+  "healthMs": 200,
+  "healthTimeoutMs": 300
+}

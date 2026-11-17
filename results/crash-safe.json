@@ -1,0 +1,88 @@
+{
+  "mode": "ack-after-commit",
+  "kills": 10,
+  "totalAcked": 6483,
+  "totalLost": 0,
+  "rounds": [
+    {
+      "round": 1,
+      "killAfterMs": 1180,
+      "ackedThisRound": 669,
+      "inflightAtKill": 8,
+      "inflightLanded": 0,
+      "lostAcked": 0
+    },
+    {
+      "round": 2,
+      "killAfterMs": 972,
+      "ackedThisRound": 588,
+      "inflightAtKill": 8,
+      "inflightLanded": 1,
+      "lostAcked": 0
+    },
+    {
+      "round": 3,
+      "killAfterMs": 1052,
+      "ackedThisRound": 749,
+      "inflightAtKill": 8,
+      "inflightLanded": 1,
+      "lostAcked": 0
+    },
+    {
+      "round": 4,
+      "killAfterMs": 700,
+      "ackedThisRound": 448,
+      "inflightAtKill": 8,
+      "inflightLanded": 1,
+      "lostAcked": 0
+    },
+    {
+      "round": 5,
+      "killAfterMs": 1140,
+      "ackedThisRound": 638,
+      "inflightAtKill": 8,
+      "inflightLanded": 1,
+      "lostAcked": 0
+    },
+    {
+      "round": 6,
+      "killAfterMs": 652,
+      "ackedThisRound": 457,
+      "inflightAtKill": 8,
+      "inflightLanded": 1,
+      "lostAcked": 0
+    },
+    {
+      "round": 7,
+      "killAfterMs": 1228,
+      "ackedThisRound": 926,
+      "inflightAtKill": 8,
+      "inflightLanded": 1,
+      "lostAcked": 0
+    },
+    {
+      "round": 8,
+      "killAfterMs": 348,
+      "ackedThisRound": 240,
+      "inflightAtKill": 8,
+      "inflightLanded": 1,
+      "lostAcked": 0
+    },
+    {
+      "round": 9,
+      "killAfterMs": 988,
+      "ackedThisRound": 754,
+      "inflightAtKill": 8,
+      "inflightLanded": 1,
+      "lostAcked": 0
+    },
+    {
+      "round": 10,
+      "killAfterMs": 1356,
+      "ackedThisRound": 1014,
+      "inflightAtKill": 8,
+      "inflightLanded": 1,
+      "lostAcked": 0
+    }
+  ]
+}

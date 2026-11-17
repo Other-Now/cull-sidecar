@@ -1,0 +1,37 @@
+{
+  "threads": 4,
+  "cpus": 4,
+  "import": {
+    "imported": 3925,
+    "secs": 14.44,
+    "imgs_per_sec": 271.8
+  },
+  "idle": {
+    "list": {
+      "n": 300,
+      "p50_ms": 0.89,
+      "p99_ms": 2.53,
+      "max_ms": 3.13
+    },
+    "set_rating": {
+      "n": 300,
+      "p50_ms": 2.79,
+      "p99_ms": 95.78,
+      "max_ms": 162.52
+    }
+  },
+  "during_import": {
+    "list": {
+      "n": 796,
+      "p50_ms": 1.16,
+      "p99_ms": 15.73,
+      "max_ms": 30.29
+    },
+    "set_rating": {
+      "n": 796,
+      "p50_ms": 4.69,
+      "p99_ms": 35.72,
+      "max_ms": 84.92
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{"imgs_per_sec":90.83175754136934,"peak_rss_kb":10536,"stats":{"batches":32,"cancelled":false,"failed":0,"found":8000,"imported":8000,"secs":88.074922434,"skipped_unchanged":0},"threads":1}
+{"imgs_per_sec":213.2698550510228,"peak_rss_kb":13172,"stats":{"batches":32,"cancelled":false,"failed":0,"found":8000,"imported":8000,"secs":37.511161613,"skipped_unchanged":0},"threads":2}
+{"imgs_per_sec":305.07453448757724,"peak_rss_kb":15336,"stats":{"batches":32,"cancelled":false,"failed":0,"found":8000,"imported":8000,"secs":26.223099917,"skipped_unchanged":0},"threads":3}
+{"imgs_per_sec":272.44411720644206,"peak_rss_kb":16736,"stats":{"batches":32,"cancelled":false,"failed":0,"found":8000,"imported":8000,"secs":29.363819935,"skipped_unchanged":0},"threads":4}

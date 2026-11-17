@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' file:; style-src 'self' 'unsafe-inline'">
+  <title>cull</title>
+  <style>
+    body { font: 13px system-ui, sans-serif; margin: 0; background: #1b1b1d; color: #ddd; }
+    header { display: flex; gap: 8px; align-items: center; padding: 8px 12px; background: #26262a; position: sticky; top: 0; }
+    button { background: #3a3a40; color: #eee; border: 0; padding: 6px 10px; border-radius: 4px; cursor: pointer; }
+    progress { width: 220px; }
+    #grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 6px; padding: 10px; }
+    .cell { position: relative; background: #111; border: 2px solid transparent; border-radius: 4px; overflow: hidden; }
+    .cell.sel { border-color: #6ab0ff; }
+    .cell.reject { opacity: .35; }
+    .cell img { width: 100%; height: 130px; object-fit: contain; display: block; }
+    .meta { padding: 3px 6px; display: flex; justify-content: space-between; font-size: 11px; }
+    .pick { color: #8f8; }
+  </style>
+</head>
+<body>
+  <header>
+    <button id="import">Import folder…</button>
+    <button id="cancel" disabled>Cancel</button>
+    <progress id="prog" value="0" max="1"></progress>
+    <button id="group">Group bursts</button>
+    <label><input type="checkbox" id="picks"> picks only</label>
+    <span id="status"></span>
+    <span style="margin-left:auto;opacity:.6">keys: ←/→ move · 0–5 rate · k keep · x reject</span>
+  </header>
+  <div id="grid"></div>
+  <script src="renderer.js"></script>
+</body>
+</html>

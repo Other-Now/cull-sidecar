@@ -1,0 +1,15 @@
+{
+  "name": "cull-sidecar-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Minimal Electron shell for the cull-sidecar Rust backend",
+  "main": "electron/main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/supervisor.test.js"
+  },
+  "devDependencies": {
+    "electron": "33.2.1"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "blur_global_auc": 0.8581132548899026,
+  "blur_within_burst": {
+    "accuracy": 1.0,
+    "bursts_with_blur": 1300,
+    "sharpest_is_unblurred": 1300
+  },
+  "blurred_frames": 1771,
+  "bursts": 2000,
+  "grouping_sweep": [
+    {
+      "largest_group": 4,
+      "precision": 1.0,
+      "recall": 0.63075,
+      "threshold": 4
+    },
+    {
+      "largest_group": 4,
+      "precision": 1.0,
+      "recall": 0.86125,
+      "threshold": 6
+    },
+    {
+      "largest_group": 4,
+      "precision": 1.0,
+      "recall": 0.9595833333333333,
+      "threshold": 8
+    },
+    {
+      "largest_group": 8,
+      "precision": 0.9847252199900381,
+      "recall": 0.9885,
+      "threshold": 10
+    },
+    {
+      "largest_group": 24,
+      "precision": 0.8789836980467028,
+      "recall": 0.9975,
+      "threshold": 12
+    },
+    {
+      "largest_group": 500,
+      "precision": 0.07121265210858578,
+      "recall": 0.99925,
+      "threshold": 14
+    },
+    {
+      "largest_group": 6868,
+      "precision": 0.0005088223002567178,
+      "recall": 1.0,
+      "threshold": 16
+    },
+    {
+      "largest_group": 8000,
+      "precision": 0.00037504688086010754,
+      "recall": 1.0,
+      "threshold": 20
+    }
+  ],
+  "photos": 8000
+}
